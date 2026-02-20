@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@import "tw-animate-css";
+
+/* Import sizing configuration - breakpoints, containers, spacing */
+@import "./sizing.css";
+
+@custom-variant dark (&:is(.dark, .dark *));
+
+/* Touch device detection variants */
+@custom-variant touch (@media (pointer: coarse));
+
+@custom-variant not-touch (@media not (pointer: coarse));
+
+@custom-variant any-touch (@media (any-pointer: coarse));
+
+/* Import token layers */
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/shadows.css";
+@import "./tokens/animation.css";
+@import "./tokens/theme-extensions.css";
+
+/* Import theme presets (optional theme classes) */
+@import "./themes/index.css";
+
+/* Import font configuration */
+@import "./fonts.css";
+
+/* Import Tailwind theme mapping - single source of truth */
+@import "./tailwind-mapping.css";
+
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+html {
+    color-scheme: light dark;
+}
+html.dark {
+    color-scheme: dark;
+}
+html.light {
+    color-scheme: light;
+}

@@ -1,0 +1,15 @@
+/**
+ * Theme Variants Index
+ *
+ * Imports all available theme variants.
+ * Each theme can be applied via class: .theme-stone, .theme-zinc, etc.
+ */
+
+@import "./stone.css";
+@import "./zinc.css";
+@import "./neutral.css";
+@import "./gray.css";
+@import "./slate.css";
+@import "./scaled.css";
+@import "./every3min.css";
+@import "./brutal.css";
