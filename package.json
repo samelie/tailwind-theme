@@ -17,7 +17,8 @@
     "postcss.config.cjs"
   ],
   "scripts": {
-    "build": "echo 'No build needed - distributing CSS source'"
+    "build": "echo 'No build needed - distributing CSS source'",
+    "knip": "knip"
   },
   "peerDependencies": {
     "tailwindcss": "^4.1.14",
