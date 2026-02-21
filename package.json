@@ -18,7 +18,8 @@
   ],
   "scripts": {
     "build": "echo 'No build needed - distributing CSS source'",
-    "knip": "knip"
+    "knip": "knip",
+    "version:patch": "npm version patch --no-git-tag-version"
   },
   "peerDependencies": {
     "tailwindcss": "^4.1.14",
