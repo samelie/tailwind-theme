@@ -9,5 +9,8 @@ export default defineKnipConfig({
 }, {
     "ignoreDependencies": [
         "@adddog/monorepo-consistency"
+    ],
+    "ignoreBinaries": [
+        "knip"
     ]
 });
