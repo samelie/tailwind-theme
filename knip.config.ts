@@ -6,4 +6,8 @@ export default defineKnipConfig({
     entry: ["src/index.ts"],
     project: ["src/**/*.ts"],
     postcss: { config: ["postcss.config.cjs"] },
+}, {
+    "ignoreDependencies": [
+        "@adddog/monorepo-consistency"
+    ]
 });
