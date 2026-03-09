@@ -8,9 +8,19 @@ export default defineKnipConfig({
     postcss: { config: ["postcss.config.cjs"] },
 }, {
     "ignoreDependencies": [
-        "@adddog/monorepo-consistency"
+        "@adddog/monorepo-consistency",
+        "@tailwindcss/postcss",
+        "postcss",
+        "postcss-load-config"
     ],
     "ignoreBinaries": [
         "knip"
+    ],
+    "entry": [
+        "postcss.config.cjs"
+    ],
+    "project": [
+        "postcss.config.cjs",
+        "src/**/*.css"
     ]
 });
