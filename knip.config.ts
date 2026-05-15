@@ -13,9 +13,7 @@ export default defineKnipConfig({
         "postcss",
         "postcss-load-config",
     ],
-    ignoreBinaries: [
-        "knip",
-    ],
+    ignoreBinaries: ["knip", "tsx"],
     entry: [
         "postcss.config.cjs",
     ],
